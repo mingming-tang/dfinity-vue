@@ -1,29 +1,28 @@
 <template>
     <div>
-        <el-button>test</el-button>
-        <router-view></router-view>
+        <h1>Frame page</h1>
+        <el-button @click="$root.$emit('change_page', 'Login')">To login page</el-button>
+
         <component v-bind:is="current_page"></component>
     </div>
 </template>
 
-
 <script>
 
-import Login from "./views/login/Login.vue"
-import Frame from "./views/frame/Frame.vue"
+import Login from "../login/Login.vue"
+import Users from "../users/Users.vue"
 
 export default {
     components: {
         Login: Login,
-        Frame: Frame
+        Users: Users,
     },
     data() {
         return {
-            current_page: "Login"
+            current_page: "Users"
         }
     },
     mounted() {
-        console.log("App")
         this.$root.$on("change_page", page_name => {
             this.current_page = page_name
         })
