@@ -11,15 +11,17 @@
 
 import Login from "../login/Login.vue"
 import Users from "../users/Users.vue"
+import Wallet from "../wallet/Wallet.vue"
 
 export default {
     components: {
         Login: Login,
         Users: Users,
+        Wallet: Wallet,
     },
     data() {
         return {
-            current_page: "Users"
+            current_page: "Wallet"
         }
     },
     mounted() {

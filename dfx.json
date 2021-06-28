@@ -1,5 +1,29 @@
 {
   "canisters": {
+    "erc20": {
+      "main": "src/erc20/main.mo",
+      "type": "motoko"
+    },
+    "update_test": {
+      "main": "src/update_test/update_test.mo",
+      "type": "motoko"
+    },
+    "cycles": {
+      "main": "src/cycles/cycles.mo",
+      "type": "motoko"
+    },
+    "managing_cycles_2": {
+      "main": "src/managing_cycles_2/test.mo",
+      "type": "motoko"
+    },
+    "managing_cycles": {
+      "main": "src/managing_cycles/test.mo",
+      "type": "motoko"
+    },
+    "wallet_1": {
+      "main": "src/wallet_1/wallet_1.mo",
+      "type": "motoko"
+    },
     "dfinity_vue": {
       "main": "src/dfinity_vue/main.mo",
       "type": "motoko"
@@ -23,7 +47,7 @@
       "packtool": ""
     }
   },
-  "dfx": "0.6.26",
+  "dfx": "0.7.2",
   "networks": {
     "ic": {
       "providers": [
